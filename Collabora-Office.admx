@@ -17,6 +17,7 @@
       <definition name="supported_LibreOffice_5_3" displayName="$(string.supported_LibreOffice_5_3)" />
       <definition name="supported_LibreOffice_5_3_49" displayName="$(string.supported_LibreOffice_5_3_49)" />
       <definition name="supported_LibreOffice_6_0_27" displayName="$(string.supported_LibreOffice_6_0_27)" />
+      <definition name="supported_LibreOffice_6_4" displayName="$(string.supported_LibreOffice_6_4)" />
     </definitions>
   </supportedOn>
   <categories>
@@ -5630,6 +5631,21 @@
           </trueValue>
           <falseValue>
             <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
+    <policy name="LastTimeGetInvolvedShown" class="Both" displayName="$(string.name_LastTimeGetInvolvedShown)" explainText="$(string.desc_LastTimeGetInvolvedShown)" presentation="$(presentation.LastTimeGetInvolvedShown)" key="Software\Policies\LibreOffice\org.openoffice.Setup\Product\LastTimeGetInvolvedShown">
+      <parentCategory ref="General" />
+      <supportedOn ref="supported_LibreOffice_6_4" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>0</string>
+          </trueValue>
+          <falseValue>
+            <string></string>
           </falseValue>
         </boolean>
         <boolean id="Final" valueName="Final" />
