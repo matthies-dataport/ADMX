@@ -35,6 +35,8 @@
         <string id="desc_LastTimeGetInvolvedShown">Disable the 'Get Involved' infobar</string>
         <string id="name_CrashReport">Send crash report</string>
         <string id="desc_CrashReport">Disable checkbox to prevent sending crash report</string>
+        <string id="name_ShowTipOfTheDay">Tip of the day</string>
+        <string id="desc_ShowTipOfTheDay">Disable checkbox to disable 'Tip of the day'</string>
 
         <string id="category_Internet">Internet</string>
         <string id="name_InetProxyType">Type of proxy</string>
@@ -900,6 +902,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="CrashReport">
         <checkBox refId="Value">Disable this checkbox to prevent from sending crash reports.</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="ShowTipOfTheDay">
+        <checkBox refId="Value">Disables the 'Tip of the day'</checkBox>
         <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="InetProxyType">
