@@ -5654,6 +5654,22 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+
+  <policy name="CrashReport" class="Both" displayName="$(string.name_CrashReport)" explainText="$(string.desc_CrashReport)" presentation="$(presentation.CrashReport)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Misc\CrashReport">
+      <parentCategory ref="General" />
+      <supportedOn ref="supported_LibreOffice_6_4" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
   
   <policy name="InetProxyType" class="Both" displayName="$(string.name_InetProxyType)" explainText="$(string.desc_InetProxyType)" presentation="$(presentation.InetProxyType)" key="Software\Policies\LibreOffice\org.openoffice.Inet\Settings\ooInetProxyType">
     <parentCategory ref="Internet" />
