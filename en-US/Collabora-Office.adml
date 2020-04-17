@@ -34,7 +34,16 @@
         <string id="name_LastTimeGetInvolvedShown">Last time get involved</string>
         <string id="desc_LastTimeGetInvolvedShown">Disable the 'Get Involved' infobar</string>
 
-      <string id="category_LDAPConfigBackend">LDAP configuration backend</string>
+        <string id="category_Internet">Internet</string>
+        <string id="name_InetProxyType">Type of proxy</string>
+        <string id="desc_InetProxyType">Choose which proxy server to use.</string>
+        <string id="ValueProxyType_NoProxy">No proxy</string>
+        <string id="ValueProxyType_Automatic">Automatic</string>
+        <string id="ValueProxyType_Manual">Manual</string>
+        <string id="name_InetNoProxy">No proxy list</string>
+        <string id="desc_InetNoProxy">List of doamins connected directly without proxy e.g. 10.*;*.landsh.de</string>
+
+        <string id="category_LDAPConfigBackend">LDAP configuration backend</string>
         <string id="name_LDAPConfigBackendSettings">LDAP User Directory</string>
         <string id="desc_LDAPConfigBackendSettings">Defines how to connect to LDAP server and retrieve user information used in User Data section
 
@@ -885,6 +894,16 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="LastTimeGetInvolvedShown">
         <checkBox refId="Value">Set value 0 disables the 'Get Involved' infobar</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="InetProxyType">
+        <dropdownList refId="enumProxyType">Select type of proxy to use</dropdownList>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="InetNoProxy">
+        <textBox refId="Value">
+          <label>Bypass proxy list (separated by semicolon)</label>
+        </textBox>
         <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="UseSystemPrintDialog">

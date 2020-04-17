@@ -82,6 +82,9 @@
     <category name="PDFExport" displayName="$(string.category_PDFExport)">
         <parentCategory ref="Common" />
     </category>
+    <category name="Internet" displayName="$(string.category_Internet)">
+      <parentCategory ref="Common" />
+    </category>
     <category name="Writer" displayName="$(string.category_Writer)">
       <parentCategory ref="LibreOffice" />
     </category>
@@ -5651,5 +5654,43 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+  
+  <policy name="InetProxyType" class="Both" displayName="$(string.name_InetProxyType)" explainText="$(string.desc_InetProxyType)" presentation="$(presentation.InetProxyType)" key="Software\Policies\LibreOffice\org.openoffice.Inet\Settings\ooInetProxyType">
+    <parentCategory ref="Internet" />
+    <supportedOn ref="supported_LibreOffice_6_4" />
+    <elements>
+      <enum id="enumProxyType" valueName="Value" required="true">
+        <item displayName="$(string.ValueProxyType_NoProxy)">
+          <value>
+            <string>0</string>
+          </value>
+        </item>
+        <item displayName="$(string.ValueProxyType_Automatic)">
+          <value>
+            <string>1</string>
+          </value>
+        </item>
+        <item displayName="$(string.ValueProxyType_Manual)">
+          <value>
+            <string>2</string>
+          </value>
+        </item>
+      </enum>
+      <boolean id="Final" valueName="Final" />
+    </elements>
+  </policy>
+
+  <policy name="InetNoProxy" class="Both" displayName="$(string.name_InetNoProxy)" explainText="$(string.desc_InetNoProxy)" presentation="$(presentation.InetNoProxy)" key="Software\Policies\LibreOffice\org.openoffice.Inet\Settings\ooInetNoProxy">
+    <parentCategory ref="Internet" />
+    <supportedOn ref="supported_LibreOffice_6_4" />
+    <elements>
+      <text id="Value" valueName="Value" required="true" />
+      <boolean id="Final" valueName="Final" />
+    </elements>
+  </policy>
+
+  
+  
   </policies>
+
 </policyDefinitions>
