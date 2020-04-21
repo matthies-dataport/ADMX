@@ -136,8 +136,22 @@
     <category name="ImpressDefaultTemplate" displayName="$(string.DefaultTemplate)">
       <parentCategory ref="Impress" />
     </category>
+    <category name="UserInterface" displayName="$(string.category_UserInterface)">
+      <parentCategory ref="LibreOffice" />
+    </category>
   </categories>
   <policies>
+    <policy name="OptionsDialogHidePersonalization" class="Machine" displayName="$(string.name_OptionsDialogHidePersonalization)" explainText="$(string.desc_OptionsDialogHidePersonalization)" key="Software\policies\LibreOffice\org.openoffice.Office.OptionsDialog\OptionsDialogGroups\ProductName/#fuse\Pages\Personalization/#fuse\Hide" valueName="Value">
+      <parentCategory ref="UserInterface" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <enabledValue>
+        <string>true</string>
+      </enabledValue>
+      <disabledValue>
+        <string>false</string>
+      </disabledValue>
+    </policy>
+    
     <policy name="LDAPConfigBackendSettings" class="Both" displayName="$(string.name_LDAPConfigBackendSettings)" explainText="$(string.desc_LDAPConfigBackendSettings)" presentation="$(presentation.LDAPConfigBackendSettings)" key="Software\Policies\LibreOffice\org.openoffice.LDAP\UserDirectory">
       <parentCategory ref="LDAPConfigBackend" />
       <supportedOn ref="supported_LibreOffice_4_2" />

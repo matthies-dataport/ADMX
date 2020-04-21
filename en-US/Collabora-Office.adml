@@ -18,13 +18,17 @@
         
         <string id="supported_LibreOffice_6_4">LibreOffice 6.4 or higher</string>
 
-      <string id="ValueFlagsNone">None</string>
+        <string id="ValueFlagsNone">None</string>
         <string id="ValueFlagsFinal">Final</string>
         <string id="ValueFlagsExternalLDAP">From LDAP</string>
         <string id="ValueFlagsExternalWin">From Windows</string>
 
         <string id="category_LibreOffice">Collabora Office</string>
         <string id="category_Common">Common</string>
+
+        <string id="category_UserInterface">User Interface</string>
+        <string id="name_OptionsDialogHidePersonalization">Hide the Personalization dialog</string>
+        <string id="desc_OptionsDialogHidePersonalization">Enable this to hide the Personalization dialog from the user.</string>
 
         <string id="category_General">General</string>
         <string id="name_UseSystemFileDialog">Use System File Dialog</string>
@@ -45,7 +49,7 @@
         <string id="ValueProxyType_Automatic">Automatic</string>
         <string id="ValueProxyType_Manual">Manual</string>
         <string id="name_InetNoProxy">No proxy list</string>
-        <string id="desc_InetNoProxy">List of doamins connected directly without proxy e.g. 10.*;*.landsh.de</string>
+        <string id="desc_InetNoProxy">List of domains connected directly without proxy e.g. 10.*;*.landsh.de</string>
 
         <string id="category_LDAPConfigBackend">LDAP configuration backend</string>
         <string id="name_LDAPConfigBackendSettings">LDAP User Directory</string>
