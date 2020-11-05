@@ -17,6 +17,7 @@
         <string id="supported_LibreOffice_6_0_27">Collabora Office 6.0-27 or higher</string>
         
         <string id="supported_LibreOffice_6_4">LibreOffice 6.4 or higher</string>
+        <string id="supported_LibreOffice_7_0">LibreOffice 7.0 or higher</string>
 
         <string id="ValueFlagsNone">None</string>
         <string id="ValueFlagsFinal">Final</string>
@@ -30,6 +31,12 @@
         <string id="name_OptionsDialogHidePersonalization">Hide the Personalization dialog</string>
         <string id="desc_OptionsDialogHidePersonalization">Enable this to hide the Personalization dialog from the user.</string>
 
+        <string id="category_Infobar">Infobar</string>
+        <string id="name_InfobarGetInvolved">Get Involved</string>
+        <string id="desc_InfobarGetInvolved">Enable/disable Infobar 'Get Involved'</string>
+        <string id="name_InfobarDonate">Donate</string>
+        <string id="desc_InfobarDonate">Enable/disable 'Donate' infobar</string>
+        
         <string id="category_General">General</string>
         <string id="name_UseSystemFileDialog">Use System File Dialog</string>
         <string id="desc_UseSystemFileDialog">Determines if Windows' file and folder picker should be used. If false, the built-in platform independent file/folder picker implementations will be used.</string>
@@ -898,6 +905,14 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="CollectUsageInformation">
         <checkBox refId="Value">Collect usage data and send it to The Document Foundation</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="InfobarDonate">
+        <checkBox refId="Value">Leave this empty to disable the 'Donate' infobar</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="InfobarGetInvolved">
+        <checkBox refId="Value">Leave this empty to disable 'Get Involved' infobar</checkBox>
         <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="LastTimeGetInvolvedShown">
